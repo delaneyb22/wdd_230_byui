@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Quicksand&family=Titan+One&display=swap');
+*, h1{
+    margin: 0;
+}
+:root {
+    --primary-color: #B5c2b7;
+    --secondary-color: #072117;
+    --accent1-color: #AB490d;
+    --accent2-color: #f1e5ec; 
+
+    --heading-font: "Montserrat:wght@500", Helvetica, sans-serif;
+    --paragraph-font: "Quicksand", Helvetica, sans-serif;
+
+}
+h1,h2,h4{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.move-down{
+    margin-top: 3rem;
+
+}
+main{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#welcome-banner{
+    display: none;
+    background-color:#B5c2b7;
+    border:1px solid #DC493A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    z-index: 2;
+    text-align: center;
+}
+#welcome-banner div p{
+    margin: 0 1.3rem;
+} 
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    color: #273043;
+    
+}
+body{
+    font-family: var(--paragraph-font);
+    background-color: #fbfbfb;
+    color: var(--secondary-color);
+    font-size: 16px;
+    
+}
+header, footer{
+    font-family: var(--heading-font);
+    background-color: #B5c2b7;
+    color: var(--secondary-color);
+    padding: 1.2rem;
+    text-align: center;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+}
+nav{
+    position: relative;
+    
+}
+nav button{
+    margin: .2rem ;
+    background: transparent;
+    font-size: 2rem;
+    color: #EFF6EE;
+    border: none;
+ 
+}
+nav button.open:hover, .close-btn:hover{
+    color:#072117;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    
+}
+header div nav.open{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #EFF6EE;
+    background-color: #5C6479;
+    transform: translateY(7%);
+    transition: transform 0.5s;
+    z-index: 1;
+    
+}
+nav ul.open{
+    display: block;
+    
+}
+nav ul li a{
+    display: block;
+    padding: 1rem ;
+    text-decoration: none;
+    color: #EFF6EE;
+    border: 1px solid #EFF6EE;
+}
+nav ul li.active a{
+    background-color: #EFF6EE;
+    color: #273043;
+}
+
+nav ul li a:hover{
+    background-color: #072117;
+}
+
+#hamburgerBtn span:nth-child(1), 
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+
+}
+#hamburgerBtn span:nth-child(2), 
+#hamburgerBtn.open span:nth-child(1),
+.spotlights div:nth-child(3), 
+.join, .list img{
+    display: none;
+
+}
+.primaryNav{
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+}
+hr{
+    margin: 1.5rem;
+    background-color: #5C6479;
+    color: #5C6479;
+}
+.logo-img{
+    width: 60px;
+    height: auto;
+    margin: 0 10px;
+}
+.footer-img{
+    width: 270px;
+}
+footer{
+    color:var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+.contact-info a{
+    color:var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    
+}
+#date{
+    margin: 2rem 0;
+    padding: 0.5rem;
+    background-color: #B5c2b7;
+    display: block;
+    font-family: "Bitter", sans-serif;
+}
+.social-media img{
+    width: 30px;
+    height: auto;
+    padding: 0.3rem;
+}
+/*Main*/
+section{
+    margin: 2rem 1.5rem;
+    border: 1px solid #5C6479;
+    background-color: var(--accent2-color);
+    height: auto;
+    box-shadow: 0 0 5px var(--accent1-color);
+
+}
+.spotlights, h4, h3, .hero button, section{
+    padding: 1.2rem;
+}
+.event h3{
+    text-decoration: underline;
+}
+.hero{
+    position: relative;
+    padding: 0;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero button{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    box-shadow: 0 1px 30px #222;
+    background-color: #AB490d;
+    text-decoration: none;
+    color:#f1e5ec;
+    font-family: var(--paragraph-font);
+    border-radius: 5px;
+}
+.hero button:hover{
+    background-color: #ab4a0d98;
+    color: #EFF6EE;
+    transform: scale(1.2);
+}
+.join button{
+    background-color: #AB490d;
+    text-decoration: none;
+    color:#f1e5ec;
+    font-family: var(--paragraph-font);
+    border-radius: 5px;
+}
+.hero h2{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: .5rem;
+    color:#072117;
+    text-shadow: 2px 2px var(--primary-color);
+    text-align: center;
+}
+.weather{
+    font-size: 2rem;
+}
+.weather h3{
+    font-family: var(--paragraph-font);
+    text-decoration: underline;
+}
+.weather p{
+    padding: 15px;
+    font-size:1.5rem;
+}
+.news h3{
+    text-decoration: underline;
+}
+.spotlights div, .stocks div{
+    border: 1px solid #273043;    
+    padding: 1.5rem;
+    box-shadow: 0 0 8px #5C6479;
+    
+}
+.spotlights div p, .spotlights div a{
+    font-size: 80%;
+}
+a, .spotlights a, .event a, .discover a, .thankDiv a, .companies a{
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+.spotlights h4{
+    text-decoration: underline;
+}
+a{
+    color: #EFF6EE;
+}
+
+/*Discover page*/
+.discover_section2 img, .discover_section3 img, .discover_section4 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 0 8px #AB490d;
+    width: auto;
+}
+.discover_section, .discover_section2, .discover_section3, .discover_section4{
+    padding:3px;
+    margin:5px;
+}
+.discover_section{
+    text-align: center;
+}
+
+/*Join page*/
+/*---Form--*/
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #AB490d;
+    border-radius:10px;
+    padding: .5rem;
+    font-family:var(--paragraph-font);
+  }
+  form legend{
+    color:var(--secondary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+  }
+  form label.top{
+    display: block;
+    padding-top:1rem;
+  }
+  form label.top input, form label.top select{
+    display: block;
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width:100%;
+    max-width: 20rem;
+    background-color: rgba(230, 176, 176, 0.318) ;
+  }
+  form label.sbs{
+    display:block;
+    padding: .75rem 0;
+    color: #555;
+  }
+  form input.submitBtn{
+    border:none;
+    background-color:#AB490d;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width:96%;
+    max-width: 20rem;
+  }
+  form label.top input:required{
+    border-left: red solid 6px;
+  }
+  form label.top input:required:valid{
+    border-left: green solid 6px;
+  }
+  
+.joinUs form, .list div{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    background-color: azure;
+    border: 1px solid #5C6479;
+    box-shadow: 0 0 8px #5C6479;
+    
+}
+fieldset{
+    margin:2rem 0;
+    color: #273043;
+    border-radius: 5px;
+}
+label{
+    display: block;
+    margin: 1rem ;
+    font-size: .90rem;
+    color: #5C6479;
+}
+.top input, textarea{
+    display: block;
+    padding: 0.75rem;
+    background-color: #EFF6EE;
+    color: #273043;
+    width: 90%;
+    font-size: 1rem;
+}
+.top input:required{
+    border: 2px solid #DC493A;
+}
+.top input:required:valid{
+    border: 2px solid #60d394;
+}
+.sendBtn{
+    padding: 1rem ;
+    width: 100%;
+    background-color: #5C6479;
+    color: #EFF6EE;
+}
+.sendBtn:hover, .directory div button:hover{
+    background-color: #DC493A;
+}
+.membershipLevel{
+    border: 1px solid #DC493A;
+    padding: .75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: #273043;
+    font-weight: bold;
+}
+
+.membershipLevel input{
+    height: 20px;
+    width: 20px;
+}
+.membershipLevel span + :checked {
+    color: #DC493A;
+}
+input[type="radio"]:checked{
+   accent-color: #DC493A;
+}
+.thank_you{
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+.thank_you_main{
+    width:100%;
+}
+
+
+/*Directory*/
+.companies div p, .companies h4, .list div a{
+    padding: .4rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.list div{
+    margin: 0;
+    box-shadow: none;
+    
+}
+.list div:nth-child(even){
+    background-color: #e7eaf2;
+}
+.directory div button{
+    margin: .5rem;
+}
+.contact_section a{
+    color:#072117;
+}

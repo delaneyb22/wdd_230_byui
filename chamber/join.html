@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">            
+    <link rel="icon" href="/chamber/favicon.ico">
+    <link rel="stylesheet" href="/chamber/styles/base.css">
+    <link rel="stylesheet" href="/chamber/styles/medium.css">
+    <link rel="stylesheet" href="/chamber/styles/large.css">
+    <title>Odessa Chamber of Commerce</title>
+</head>
+<body>
+<header>
+        <div class="main-header">
+            <nav>
+                <button id="hamburgerBtn"> 
+                    <span>&#9776;</span> 
+                    <span>X</span> 
+                </button>
+                <ul id="primaryNav">
+                    <li><a href="/chamber/index.html">Home</a></li>
+                    <li><a href="/chamber/discover.html">Discover</a></li>
+                    <li><a href="/chamber/directory.html">Directory</a></li>
+                    <li><a href="/chamber/join.html">Join</a></li>
+                    <li><a href="/chamber/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+
+                <a href="index.html"><img class="logo-img" src="/chamber/images/Odessa_logo.webp" alt="logo"></a>
+                <div class="headings">
+                    <h1>Odessa</h1>
+                    <h5>Chamber of Commerce</h5>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            
+        </div>
+        <span id="date"></span>
+</header>
+    <form method="get" action="/chamber/thankyou.html">
+        
+            <fieldset>
+                <legend>Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Business Position<input type="text" name="title" placeholder="alpha characters, -,min 7 letters"></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+                <label class="top">Business Name*<input type="text" name="title" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="audience" value="NP">Non Profit</label>
+                <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze</label>
+                <label class="sbs"><input type="radio" name="audience" value="silver">Silver</label>
+                <label class="sbs"><input type="radio" name="audience" value="gold">Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>business info<input type="textarea" name="description" placeholder="briefly describe business"></label>
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+    </form>
+    <div id="membership-info">
+        <section>
+            <h3>Non-Profit: No Cost</h3>
+            <p>Info about this package</p>
+        </section>
+        <section>
+            <h3>Bronze Level: $50/year</h3>
+            <p>info about this level</p>
+        </section>
+        <section>
+            <h3>Silver Level: $75/year</h3>
+            <p>info about this level</p>
+        </section>
+        <section>
+            <h3>Gold Level: $100/year</h3>
+            <p>info about this level</p>
+        </section>
+    </div>
+
+
+
+    <footer>
+                
+        <img class="logo-img footer-img" src="/chamber/images/Odessa_logo.webp" alt="logo">
+            
+        <h3>Odessa, Missouri</h3>
+        <div class="contact-info">    
+            <br>
+            <a href="#">Odessachamber@Missouri.org</a><br><br>
+            <a href="#">816-555-0909</a><br><br>
+            <a href="#">Map</a>
+        </div>
+    
+        <div class="copyright">
+                <hr>
+                &copy; <span id="year"></span> Odessa Chamber | <b>Delaney Baker</b> | WDD 230 Project |
+                <span id="last-update"></span>
+        </div>
+    </footer>
+<script src="/chamber/scripts/chamber.js"></script>
+    
+</body>
+</html>

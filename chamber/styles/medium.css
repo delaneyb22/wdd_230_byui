@@ -1,0 +1,142 @@
+@media only screen and (min-width: 44rem) {
+    body, header, footer{
+        font-size: 1.2em;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .logo-img{
+        width: 90px;
+        margin: 0 30px;
+    }
+    .hero h2{
+        font-size: 2.5em;
+    }
+    .contact-info{
+        grid-row: 1/3;
+        grid-column: 3/4;
+        font-size: 20px;
+        align-self: center;
+    }
+    .copyright{
+        grid-column: 1/4;
+    }
+    .footer-img{
+        grid-column: 1/3;
+        width: 70%;
+        align-self: center;
+        justify-self: center;
+        
+    }
+    footer h3{
+        grid-column: 1/3;
+    }
+    footer{
+        grid-column: 1/3;
+        text-align: center;
+        padding: 2rem 8rem;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 1rem;
+        margin:  1rem;
+    }
+    section, .discover figure{
+        margin: 0;
+    }
+    .hero, .visits-display, .directory div.gridListBtn{
+        grid-column: 1/9;
+    }
+    .news, .companies{
+        grid-column: 1/9;
+        grid-row: 2/3;
+    }
+    .spotlights{
+        grid-column: 1/9;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+        height: auto;
+    }
+   
+    .event{
+        grid-column: 1/6;
+        grid-row: 5/6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .weather{
+        grid-column: 6/9;
+        grid-row: 5/6;
+        font-size: 1.5rem;
+    }
+    .join{
+        display: block;
+        grid-column: 1/9;
+        grid-row: 4/5;
+        
+    }
+    .join button{
+        width: 95%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: #DC493A;
+        color: #EFF6EE;
+        box-shadow: 0 0 15px #5C6479;
+
+    }
+    .join button:hover{
+        opacity: .9;
+        transform: scale(1.1);
+    }
+
+    .discover figure{
+      grid-column: 4/9;
+    }
+    .demographic-data{
+      grid-column: 1/4;
+      grid-row: 2/4; 
+    }
+    .stocks{
+        grid-column: 1/4;
+        grid-row: 4/7;
+    }
+    
+    .discover figure img:hover{
+        transform: scale(0.9);
+        opacity:.8;
+        box-shadow: 0 0 15px #5C6479;
+        
+    }
+
+    .joinUs h2, .thankDiv{
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+    .joinUs form{
+        grid-column: 2/8;
+        grid-row: 2/3;
+        margin: 0;
+    }
+    .sendBtn{
+        width: 100%;    
+    }
+
+    .membershipInfo{
+        grid-column: 2/8;
+        grid-row:3/4;
+    }
+    textarea{
+        height: 120px;
+    }
+
+    .list div{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+    }
+} /*end medium */
